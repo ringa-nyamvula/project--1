@@ -10,19 +10,29 @@ function fetchRecipes() {
      
     data.forEach(el=> {
         let parentDiv = document.createElement("div");
-        parentDiv.className = "cards";
-        let name= document.createElement("p")
-        name.textContent = el.strMeal
+        parentDiv.className = "card";
+
         let image = document.createElement("img")
-        image.src = el.strMealThumb
+        image.src = el.strMealThumb;
+        parentDiv.appendChild(image);
+
+        let detailsDiv = document.createElement("div");
+        detailsDiv.className = "card-details"
+
+
+        let name= document.createElement("p")
+        name.textContent = el.strMeal;
+        detailsDiv.appendChild(name);
+
+       
         let step= document.createElement("p")
         step.textContent = el.strInstructions
-        document.querySelector("body").appendChild(name)
-        document.querySelector("body").appendChild(image)
-        document.querySelector("body").appendChild(step)
+        detailsDiv.appendChild(step);
+
+        parentDiv.appendChild(detailsDiv);
         
-        parentDiv.appendChild(image)
-        parentDiv.appendChild()
+        
+        
     
      
     })
