@@ -30,6 +30,8 @@ function fetchRecipes() {
         detailsDiv.appendChild(step);
 
         parentDiv.appendChild(detailsDiv);
+
+        document.querySelector("body").appendChild(parentDiv);
         
         
         
