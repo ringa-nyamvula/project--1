@@ -7,14 +7,16 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: burlywood;
+    
   }
   
   /* Styles for the recipe cards */
   .card {
-    display: flex;
-    flex-direction: column;
+    display: flexbox;
+    flex-direction:column;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 5px;
     overflow: hidden;
   }
@@ -37,7 +39,7 @@
   }
   
   .like-button {
-    background-color: #4CAF50;
+    background-color: #4ca8af;
     border: none;
     color: white;
     padding: 10px;
@@ -61,7 +63,7 @@
   }
   
   .comment-section button {
-    background-color: #4CAF50;
+    background-color: #4c93af;
     border: none;
     color: white;
     padding: 10px;
