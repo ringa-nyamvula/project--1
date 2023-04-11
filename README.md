@@ -1,7 +1,7 @@
 
 # Phase One Project 
 ## Description
-In this project i decided to work with a meal public API and used different mealrecipes and ingridients from their json data.
+In this project I decided to work with a public API for meals and used different meal                         recipes and ingridients from their json data.
 
 The page basically shows one the various recipe and allows oneto like and the recipe if they are pleased.It also has a comment section where any comments be it criticism or compliments could be shared and looked at.
 
@@ -15,4 +15,4 @@ This is the public API used.
 ## Project Link
 The link to the project above is
  https://ringa-nyamvula.github.io/project--1/
- 
+
