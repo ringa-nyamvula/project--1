@@ -73,10 +73,17 @@ function fetchRecipes() {
 
         recipesContainer.appendChild(card);
 
+         // Hide all cards except the first one
         if (index !== 0) {
           card.style.display = 'none';
         }
       });
+
+
+      let nextButton = document.createElement('button');
+      nextButton.textContent = 'Next';
+      nextButton.addEventListener('click', () => {
+        const cards = document.getElementsByClassName('card');
     })
     .catch(error => {
       console.error('Error fetching recipes:', error);
