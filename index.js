@@ -79,12 +79,24 @@ function fetchRecipes() {
         }
       });
 
-
+      // Create a next button
       let nextButton = document.createElement('button');
       nextButton.textContent = 'Next';
       nextButton.addEventListener('click', () => {
         const cards = document.getElementsByClassName('card');
-    })
+
+        if (currentCardIndex < cards.length - 1) {
+          // Hide the current card
+          cards[currentCardIndex].style.display = 'none';
+          // Show the next card
+          currentCardIndex++;
+          cards[currentCardIndex].style.display = 'block';
+        } 
+    });
+        // Append the next button to the recipes container
+        recipesContainer.appendChild(nextButton);
+    
+  })
     .catch(error => {
       console.error('Error fetching recipes:', error);
     });
