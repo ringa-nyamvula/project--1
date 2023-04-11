@@ -1,0 +1,94 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styles for the recipe cards */
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .card img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .card-details {
+    padding: 20px;
+  }
+  
+  .card-details p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .like-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .comment-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .comment-section textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .comment-section button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .comment {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Media queries for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .card {
+      margin: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .card {
+      margin: 5px;
+    }
+  }
+  
