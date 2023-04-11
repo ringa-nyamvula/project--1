@@ -72,6 +72,10 @@ function fetchRecipes() {
         card.appendChild(detailsDiv);
 
         recipesContainer.appendChild(card);
+
+        if (index !== 0) {
+          card.style.display = 'none';
+        }
       });
     })
     .catch(error => {
