@@ -11,8 +11,13 @@
   
   /* Styles for the recipe cards */
   .card {
-    display: flex;
-    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
